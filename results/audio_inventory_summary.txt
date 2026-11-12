@@ -1,0 +1,9 @@
+AUDIO INVENTORY SUMMARY
+Readable WAV files: 9295
+Total duration: 33.46 hours
+Sample-rate counts:
+  8000 Hz: 3193
+  44100 Hz: 6102
+Channel counts:
+  1: 9295
+CSV report: results/audio_inventory.csv

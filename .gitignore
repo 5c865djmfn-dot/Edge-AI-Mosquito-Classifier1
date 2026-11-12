@@ -1,0 +1,19 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Large/raw data (do not commit dataset)
+data/raw/**
+!data/raw/audio/
+!data/raw/metadata/
+!data/raw/audio/.gitkeep
+!data/raw/metadata/.gitkeep
+
+data/processed/
+
+# Local/editor files
+.vscode/
+.DS_Store
+Thumbs.db
