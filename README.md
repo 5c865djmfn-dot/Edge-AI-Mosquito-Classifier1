@@ -106,3 +106,14 @@ The firmware processes six synthetic test scores and uses a threshold of 0.65 to
 The Serial Monitor confirms that the classification logic runs repeatedly.
 
 **Limitation:** This demonstration does not use a real INMP441 microphone or a trained CNN. It validates the ESP32 application logic only.
+
+
+## Video Demonstration
+
+**Final project video (2–5 minutes):**
+
+https://drive.google.com/file/d/1gsPw8XQDeJPJlzsQhw8s4UCdLEWOWsf5/view?usp=sharing
+
+The video demonstrates the dataset preparation results and the ESP32 decision-logic simulation in Wokwi.
+
+The simulation uses synthetic test scores. It does not demonstrate a trained CNN or physical microphone input.
