@@ -2,7 +2,9 @@
 
 A low-cost edge-AI prototype for detecting mosquito flight-tone events from short audio windows. The initial implementation uses the public HumBugDB audio dataset, then evaluates how resampling affects classification performance before preparing an ESP32/TFLite Micro deployment.
 
-> **Current status:** project scaffold only. No model accuracy, latency, RAM, or flash results have been measured yet. The target of >90% accuracy is an experimental goal, not a claimed result.
+> **Current status (23 November 2026):** Dataset inspection and metadata analysis have been completed. A total of 9,295 WAV files were inventoried, including 6,795 mosquito recordings, 1,900 background recordings, and 600 recordings excluded from binary classification. A train/validation/test split containing 8,695 labelled examples was generated (6,058 training, 1,280 validation, and 1,357 test examples).
+
+Feature extraction, CNN training, model evaluation, and ESP32 deployment have not been verified as completed. The research target of more than 90% classification accuracy remains unverified. No model accuracy, inference latency, RAM, or flash performance claims are made.
 
 ## Research question
 
@@ -91,3 +93,16 @@ The intended physical sensor is an INMP441 I2S microphone connected to an ESP32.
 ## Dataset citation
 
 Kiskin, I. et al. (2021). *HumBugDB: a large-scale acoustic mosquito dataset*. Zenodo. https://doi.org/10.5281/zenodo.4904800. Dataset licence: CC BY 4.0.
+ 
+
+## Wokwi ESP32 Demonstration
+
+**Live simulation:** https://wokwi.com/projects/481424737108909057
+
+The ESP32 simulation was successfully executed on 23 November 2026.
+
+The firmware processes six synthetic test scores and uses a threshold of 0.65 to classify them as MOSQUITO DETECTED or BACKGROUND.
+
+The Serial Monitor confirms that the classification logic runs repeatedly.
+
+**Limitation:** This demonstration does not use a real INMP441 microphone or a trained CNN. It validates the ESP32 application logic only.
